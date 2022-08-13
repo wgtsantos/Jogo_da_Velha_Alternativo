@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Jogo do Rock </title>
+<script type="text/javascript" language="javascript" src="js/game.js"></script>
+<link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen"/>
+
+</head>
+
+<body bgcolor="#EEE">
+<p align="center"><img src="img/rock.png" width="140" height="100" alt="rock" class="pos"/></p>
+<h1 align="center"> Jogo do Rock </h1>
+
+   <table align="center" border="0" width="500" cellpadding="1" cellspacing="1" style="margin-bottom:40px;">
+    <tr>
+      <td style="border:none;">
+        <form action="#" method="#" name="opcao">
+          <label style="font-weight:bolder; font-size:18px;"> Jogar contra o Computador:</label> <br/>
+          <label style="font-weight:bolder;"><input type="radio" id="cpus" name="cpu" value="SIM" class="rad" checked="checked"/> SIM </label>
+          <label style="font-weight:bolder;"><input type="radio" id="cpun" name="cpu" class="rad" value="NÃO"/> NÃO </label>
+        </form>
+        </td>
+        <td>
+        <form action="#" method="post" name="btn">
+          <input type="button" id="novo" name="novo" value="NOVO JOGO" class="bot" disabled="disabled" onclick="start()"/>
+          <input type="button" id="cancelar" name="cancelar" value="CANCELAR" class="bot" disabled="disabled" onclick="cancel()"/>
+        </form>
+      </td>
+    </tr>
+    </table>
+ <div id="geral">
+ <div id="corte"></div>
+ <table align="center" border="0" cellpadding="1" cellspacing="1" background="img/tela.png" style="position:relative;">
+    <tr>
+      <td><img src="img/transp.png" alt="imagem" id="c1" onclick="return checkjogo(this.id)"/></td>
+      <td><img src="img/transp.png" alt="imagem" id="c2" onclick="return checkjogo(this.id)"/></td>
+      <td><img src="img/transp.png" alt="imagem" id="c3" onclick="return checkjogo(this.id)"/></td>
+    </tr>
+    <tr>
+      <td><img src="img/transp.png" alt="imagem" id="c4" onclick="return checkjogo(this.id)"/></td>
+      <td><img src="img/transp.png" alt="imagem" id="c5" onclick="return checkjogo(this.id)"/></td>
+      <td><img src="img/transp.png" alt="imagem" id="c6" onclick="return checkjogo(this.id)"/></td>
+    </tr>
+    <tr>
+      <td><img src="img/transp.png" alt="imagem" id="c7" onclick="return checkjogo(this.id)"/></td>
+      <td><img src="img/transp.png" alt="imagem" id="c8" onclick="return checkjogo(this.id)"/></td>
+      <td><img src="img/transp.png" alt="imagem" id="c9" onclick="return checkjogo(this.id)"/></td>
+    </tr>
+</table>
+</div>
+<div id="msg" style="margin:0 auto; margin-top:20px; width:700px; height:200px; text-align:center; font-size:28px; font-weight:bolder; color:#45418F;">
+</div>
+
+
+</body>
+</html>

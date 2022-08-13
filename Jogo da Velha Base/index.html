@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Jogo da Velha </title>
+<script type="text/javascript" language="javascript" src="js/game.js"></script>
+</head>
+
+<body bgcolor="#EEE">
+
+<h1 align="center"> Jogo da Velha </h1>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+    <tr>
+      <td colspan="3"  style="border:none;">
+        <form action="#" method="#" name="opcao">
+          <label><strong> Jogar contra o Computador: </strong></label> <br/>
+          <input type="radio" id="cpu" name="cpu" value="SIM" checked="checked"/>
+          <label> SIM </label>
+          <input type="radio" id="cpu" name="cpu" value="NÃO"/>
+          <label> NÃO </label>
+        </form>
+      </td>
+    </tr>
+    <tr>
+      <td><img src="img/transp.png" alt="imagem" id="c1" onclick="return checkjogo(this.id)"/></td>
+      <td><img src="img/transp.png" alt="imagem" id="c2" onclick="return checkjogo(this.id)"/></td>
+      <td><img src="img/transp.png" alt="imagem" id="c3" onclick="return checkjogo(this.id)"/></td>
+    </tr>
+    <tr>
+      <td><img src="img/transp.png" alt="imagem" id="c4" onclick="return checkjogo(this.id)"/></td>
+      <td><img src="img/transp.png" alt="imagem" id="c5" onclick="return checkjogo(this.id)"/></td>
+      <td><img src="img/transp.png" alt="imagem" id="c6" onclick="return checkjogo(this.id)"/></td>
+    </tr>
+    <tr>
+      <td><img src="img/transp.png" alt="imagem" id="c7" onclick="return checkjogo(this.id)"/></td>
+      <td><img src="img/transp.png" alt="imagem" id="c8" onclick="return checkjogo(this.id)"/></td>
+      <td><img src="img/transp.png" alt="imagem" id="c9" onclick="return checkjogo(this.id)"/></td>
+    </tr>
+</table>
+<div id="msg" style="margin:0 auto; margin-top:20px; width:700px; text-align:center; font-size:28px; font-weight:bolder; color:#45418F;">
+</div>
+
+
+</body>
+</html>

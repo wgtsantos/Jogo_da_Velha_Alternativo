@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+body{
+    background-image:url(../img/fundo.png);
+ }
+#geral{
+	width:465px;
+	margin:0 auto;
+ }
+#corte{
+	width:470px;
+	height:480px;
+	border:none;
+	position:absolute;
+ }
+.bot{
+	width:100px;
+	height:40px;
+	font-weight:bolder;
+ }
+.rad{
+	width:20px;
+	height:20px; 
+	font-weight:bolder;
+ }
+.pos{
+	margin-bottom:-30px;
+ }
